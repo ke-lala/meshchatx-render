@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: meshchatx
+    env: docker
+    plan: free
+    region: singapore # 可根据需要修改，如 oregon, frankfurt
+    envVars:
+      - key: PORT
+        value: 8080
+      # 在此处添加 MeshChatX 所需的其他环境变量
+      # - key: DATABASE_URL
+      #   sync: false
